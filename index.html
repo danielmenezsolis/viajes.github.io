@@ -11,7 +11,7 @@
   <!-- Navbar -->
   <nav class="bg-white shadow fixed w-full z-50">
     <div class="container mx-auto flex justify-between items-center py-4 px-6">
-      <a href="index.html" class="text-2xl font-bold text-red-500">La Tía Viajera</a>
+      <a href="index.html" class="text-2xl font-bold text-red-500">Viajes Viajosos </a>
       <div class="space-x-6">
         <a href="#destacado" class="text-gray-700 hover:text-red-500">Viaje Destacado</a>
         <a href="#destinos" class="text-gray-700 hover:text-red-500">Destinos</a>
@@ -21,9 +21,9 @@
   </nav>
 
   <!-- Hero -->
-  <section class="relative bg-cover bg-center h-[90vh] flex items-center justify-center" style="background-image: url('img/travel.png">
+  <section class="relative bg-cover bg-center h-[90vh] flex items-center justify-center" style="background-image: url('img/travel.png');">
     <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-    <div class="relative z-10 text-center text-white px-6">
+    <div class="relative z-10 text-center text-white px-6">/fix ) expected
       <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Explora el mundo con La Tía Viajera</h1>
       <p class="text-lg md:text-2xl mb-6">Los mejores destinos, experiencias únicas y recuerdos inolvidables</p>
       <a href="#destacado" class="bg-red-500 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold shadow-lg transition">Descubre tu próximo viaje</a>
@@ -58,7 +58,7 @@
         
         <!-- Card Roma -->
         <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-          <img src="img/roma.png"Roma" class="w-full h-48 object-cover">
+          <img src="img/roma.png" alt="Roma" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-bold text-gray-800 mb-2">Roma, Italia</h3>
             <p class="text-gray-600 mb-4">Explora el Coliseo, la Fontana di Trevi y el Vaticano en una ciudad llena de historia.</p>
@@ -101,6 +101,31 @@
   <footer class="bg-gray-900 text-white text-center py-6">
     <p>© 2025 Viajes Viajosos- Todos los derechos reservados</p>
   </footer>
+
+<!-- Widget Configuration -->
+<script>
+    window.ChatWidgetConfig = {
+        webhook: {
+            url: 'https://n8n.srv989538.hstgr.cloud/webhook/f4278be1-01dc-48f1-a20f-1ccc68647bbe/chat',
+            route: 'general'
+        },
+        branding: {
+            logo: 'https://images.icon-icons.com/1950/PNG/512/free-30-instagram-stories-icons83_122630.png',
+            name: 'Viajes Viajosos', // Your company name
+            welcomeText: 'Hola 👋, como puedo ayudarte?', //Welcome message
+            responseTimeText: 'respondemos rapidamente' //Response time message
+        },
+        style: {
+            primaryColor: '#D10F0F', //Primary color
+            secondaryColor: '#6b3fd4', //Secondary color
+            position: 'right', //Position of the widget (left or right)
+            backgroundColor: '#ffffff', //Background color of the chat widget
+            fontColor: '#333333' //Text color for messages and interface
+        }
+    };
+</script>
+<script src="https://nocodeveloper.com/chat.js"></script>
+<!-- Widget Script -->
 
 </body>
 </html>
