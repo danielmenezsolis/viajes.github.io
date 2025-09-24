@@ -101,31 +101,44 @@
   <footer class="bg-gray-900 text-white text-center py-6">
     <p>© 2025 Viajes Viajosos- Todos los derechos reservados</p>
   </footer>
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 
-<!-- Widget Configuration -->
-<script>
-    window.ChatWidgetConfig = {
-        webhook: {
-            url: 'https://n8n.srv989538.hstgr.cloud/webhook/f4278be1-01dc-48f1-a20f-1ccc68647bbe/chat',
-            route: 'general'
-        },
-        branding: {
-            logo: 'https://images.icon-icons.com/1950/PNG/512/free-30-instagram-stories-icons83_122630.png',
-            name: 'Viajes Viajosos', // Your company name
-            welcomeText: 'Hola 👋, como puedo ayudarte?', //Welcome message
-            responseTimeText: 'respondemos rapidamente' //Response time message
-        },
-        style: {
-            primaryColor: '#D10F0F', //Primary color
-            secondaryColor: '#6b3fd4', //Secondary color
-            position: 'right', //Position of the widget (left or right)
-            backgroundColor: '#ffffff', //Background color of the chat widget
-            fontColor: '#333333' //Text color for messages and interface
-        }
-    };
+<style>
+  .chat-window {
+  width: var(--chat--window--width);
+  height: var(--chat--window--height);
+  background: var(--chat--color-white);
+  border-radius: var(--chat--window--border-radius);
+  box-shadow: var(--chat--window--box-shadow);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: var(--chat--font-family);
+}
+</style>
+
+<script type="module">
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+  createChat({
+    webhookUrl: 'https://n8n.srv989538.hstgr.cloud/webhook/f4278be1-01dc-48f1-a20f-1ccc68647bbe/chat',
+    defaultLanguage: 'en',
+    widgetColor: '#ef4444',
+    initialMessages: [
+      'Bienvenidos a Viajes Viajosos, listo para tu proxima aventura 👋',
+    ],
+    i18n: {
+      en: {
+        title: 'Viajes Viajosos',
+        subtitle: "Inicia el chat, contestamos las 24 horas del día.",
+        footer: '',
+        getStarted: 'Nueva conversación',
+        inputPlaceholder: 'Hola 👋, como puedo ayudarte?',
+      }
+    }
+  });
 </script>
-<script src="https://nocodeveloper.com/chat.js"></script>
-<!-- Widget Script -->
+
 
 </body>
 
